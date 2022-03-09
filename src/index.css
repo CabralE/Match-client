@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;700&display=swap");
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -11,12 +12,12 @@ h2 {
 }
 
 * {
-  font-family: 'Readex Pro', sans-serif;
+  font-family: "Readex Pro", sans-serif;
 }
 
 .primary-title {
   font-size: 90px;
-  color: rgba(255,255,255);
+  color: rgba(255, 255, 255);
 }
 
 .primary-button {
@@ -34,22 +35,20 @@ h2 {
 }
 
 .secondary-button {
-  color: rgb(121,119,119);
-  background-color: rgb(255,255,255);
+  color: rgb(121, 119, 119);
+  background-color: rgb(255, 255, 255);
   font-weight: 500;
   font-size: 15px;
   text-transform: uppercase;
   padding: 12px 30px;
   border-radius: 30px;
-  border: solid 2px rgb(121,119,119);
+  border: solid 2px rgb(121, 119, 119);
   margin: 6px;
 }
-.secondary-button:hover{
-  color: rgb(48,48,48);
-  border: solid 2px rgb (48,48,48);
+.secondary-button:hover {
+  color: rgb(48, 48, 48);
+  border: solid 2px rgb (48, 48, 48);
 }
-
-
 
 /* - - - - - Navbar - - - - - */
 
@@ -57,12 +56,11 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-
 }
 
 nav .nav-button {
   color: rgb(254, 32, 114);
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
   font-size: 20px;
   padding: 10px 20px;
   border-radius: 10px;
@@ -72,13 +70,12 @@ nav .nav-button {
 
 nav .nav-button:disabled {
   background-color: rgb(189, 180, 180);
-  color: rgb(193, 42, 90)
+  color: rgb(193, 42, 90);
 }
 
 nav .logo-container {
   width: 170x;
   margin: 15px;
-
 }
 
 nav .logo-container .logo {
@@ -91,17 +88,17 @@ nav .logo-container .logo {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background: linear-gradient( 
-    to bottom,
-    rgba(0,0,0,0.65) 8%,
-    rgba(0,0,0,0) 100%
-  ), url('images/a6bdbf75536ae8fc49de05059422057b.webp')
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.65) 8%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("images/a6bdbf75536ae8fc49de05059422057b.webp");
 }
 
 .home {
   margin-top: 30vh;
 }
-
 
 /* - - - - - Auth Modal - - - - - */
 .auth-modal {
@@ -113,10 +110,9 @@ nav .logo-container .logo {
   margin-right: auto;
   max-width: 360px;
   height: 600px;
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   padding: 40px;
-
 }
 
 .auth-modal .close-icon {
@@ -128,27 +124,12 @@ nav .logo-container .logo {
   flex-direction: column;
 }
 
-.auth-modal input[type=password],
-.auth-modal input[type=email] {
+.auth-modal input[type="password"],
+.auth-modal input[type="email"] {
   padding: 8px;
   margin: 8px;
   font-size: 17px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* - - - - - OnBoarding Page - - - - - */
 
@@ -173,7 +154,7 @@ nav .logo-container .logo {
   padding: 15px 30px;
   margin: 10px 0;
   font-size: 15px;
-  border: solid 2px rgb(219,219,219);
+  border: solid 2px rgb(219, 219, 219);
   border-radius: 10px;
 }
 
@@ -198,9 +179,9 @@ nav .logo-container .logo {
 
 .onboarding form .multiple-input-container label {
   padding: 10px;
-  border: solid 2px rgb(144,144,144);
-  border-radius:  10px;
-  transition: all .03s;
+  border: solid 2px rgb(144, 144, 144);
+  border-radius: 10px;
+  transition: all 0.03s;
   margin-right: 10px;
 }
 
@@ -213,17 +194,62 @@ nav .logo-container .logo {
 }
 
 .onboarding form input[type="radio"]:checked + label {
-  border: solid 2px rgb(221,39,22);
+  border: solid 2px rgb(221, 39, 22);
 }
 
 .onboarding form input[type="submit"]:hover {
-  background-color: rgb(235,235,235) ;
+  background-color: rgb(235, 235, 235);
 }
 
 .onboarding form input[type="submit"]:active {
-  background-color: rgb(226,115,115) ;
+  background-color: rgb(226, 115, 115);
 }
 
 .onboarding form .photo-container img {
   width: 100%;
 }
+
+/* - - - - - Dashboard Page - - - - - */
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard .swipe-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.swipe {
+  position: absolute;
+}
+
+.dashboard .card-container {
+  width: 400px;
+  height: 650px;
+}
+
+.card {
+  width: 400px;
+  height: 650px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.dashboard .swipe-info {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+
+/* - - - - - Chat Continer Page - - - - - */
